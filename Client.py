@@ -15,13 +15,13 @@ payload = {
 body = json.dumps(payload, separators=(",", ":"))
 
 signature = hmac.new(
-    secret_key.encode(),
+    secret_key.encode('utf-8'),
     body.encode(),
     hashlib.sha512
 ).hexdigest()
 
 response = requests.post(
-    "http://localhost:8000/api/private",
+    "https://freever.site/api/private",
     headers={
         "X-API-KEY": api_key,
         "X-SIGNATURE": signature,
@@ -29,5 +29,4 @@ response = requests.post(
     },
     data=body
 )
-
 print(response.json())
