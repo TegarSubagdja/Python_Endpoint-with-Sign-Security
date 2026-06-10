@@ -1,8 +1,8 @@
 from hashlib import sha256
 import hmac
 
-secret_key = "tegarsubagdja"
-message = '{"tegar":"avita"}'
+secret_key = "[]"
+message = '[]'
 
 signature = hmac.new(
     secret_key.encode(),
