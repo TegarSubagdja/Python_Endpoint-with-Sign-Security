@@ -110,4 +110,22 @@ sudo systemctl enable fastapi
 sudo systemctl status fastapi
 ```
 
-"# Python_Endpoint-with-Sign-Security" 
+# Docker
+```bash
+docker compose up -d --build
+```
+
+## Check Docker
+```bash
+docker ps
+```
+
+## Stop Docker
+```bash
+docker compose down
+```
+
+## Restart Docker
+```bash
+docker compose restart
+```
