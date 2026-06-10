@@ -21,7 +21,7 @@ signature = hmac.new(
 ).hexdigest()
 
 response = requests.post(
-    "https://freever.site/api/private",
+    "http://localhost:8000/private",
     headers={
         "X-API-KEY": api_key,
         "X-SIGNATURE": signature,
